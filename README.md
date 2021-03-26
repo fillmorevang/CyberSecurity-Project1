@@ -29,7 +29,7 @@ Load balancing ensures that the application will be highly available, in additio
 balancing improves application responsiveness. In a security aspect, load balancers can defend an organization against denial-of-service (DDos) attacks.
 
 - Jump Box's provide an additional layer of security from the public internet by controlling access to the other machines by allowing connections from specific IP addresses and 
-forwarding to those machines..can _TODO: What aspect of security do load balancers protect? What is the advantage of a jump box?_
+forwarding to those machines.
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the _____ and system _____.
 - _TODO: What does Filebeat watch for?_
