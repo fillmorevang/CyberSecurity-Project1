@@ -28,7 +28,7 @@ Load balancing ensures that the application will be highly available, in additio
 - Load balancing is the process of distributing network traffic across multiple servers. This ensures no single server bears too much demand. By spreading the work evenly, load 
 balancing improves application responsiveness. In a security aspect, load balancers can defend an organization against denial-of-service (DDos) attacks.
 
-- Jump Box's provide an additional layer of security from the public internet by controlling access to the other machines by allowing connections from specific IP addresses and 
+- Jump box's provide an additional layer of security from the public internet by controlling access to the other machines by allowing connections from specific IP addresses and 
 forwarding to those machines.
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the file systems of the VM's on the network and system metrics.
@@ -48,11 +48,11 @@ The configuration details of each machine may be found below.
 
 The machines on the internal network are not exposed to the public Internet. 
 
-Only the _____ machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
-- _TODO: Add whitelisted IP addresses_
+Only the jump box machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
+- 107.2.84.145
 
-Machines within the network can only be accessed by _____.
-- _TODO: Which machine did you allow to access your ELK VM? What was its IP address?_
+Machines within the network can only be accessed by each other.
+- Only the Jump Box has access to the ELK VM 10.1.0.4
 
 A summary of the access policies in place can be found in the table below.
 
