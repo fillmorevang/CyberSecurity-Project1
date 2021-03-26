@@ -32,8 +32,8 @@ balancing improves application responsiveness. In a security aspect, load balanc
 forwarding to those machines.
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the file systems of the VM's on the network and system metrics.
-- _TODO: What does Filebeat watch for?_
-- _TODO: What does Metricbeat record?_
+- Filebeat collects data about the file system.
+- Metricbeat collects machine metrics, such as uptime.
 
 The configuration details of each machine may be found below.
 _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
