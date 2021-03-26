@@ -31,7 +31,7 @@ balancing improves application responsiveness. In a security aspect, load balanc
 - Jump Box's provide an additional layer of security from the public internet by controlling access to the other machines by allowing connections from specific IP addresses and 
 forwarding to those machines.
 
-Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the _____ and system _____.
+Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the file systems of the VM's on the network and system metrics.
 - _TODO: What does Filebeat watch for?_
 - _TODO: What does Metricbeat record?_
 
