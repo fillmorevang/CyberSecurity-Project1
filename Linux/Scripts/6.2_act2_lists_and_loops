@@ -1,0 +1,30 @@
+1.
+
+sysadmin@UbuntuDesktop:~/scripts$ touch for_loops.sh
+
+sysadmin@UbuntuDesktop:~/scripts$ chmod +x for_loops.sh 
+
+sysadmin@UbuntuDesktop:~/scripts$ nano for_loops.sh 
+
+#!/bin/bash
+
+# variables
+states=(
+'California'
+'Florida'
+'Colorado'
+'Minnesota'
+'Hawaii'
+)
+
+
+# for loops
+for state in ${states[@]}
+do
+  if [ $state = 'Hawaii' ]
+  then 
+    echo "Hawaii is the best!"
+  else 
+    echo "I'm not fond of Hawaii"
+  fi
+done
