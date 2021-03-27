@@ -71,7 +71,10 @@ configuration that reduces the time of deployment and errors.
 The playbook implements the following tasks:
 - Install Docker
 - Install Python3-pip
-- ...
+- Install Docker python module
+- Download and launch ELK container
+- Enable service Docker on boot
+- Use more memory
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
