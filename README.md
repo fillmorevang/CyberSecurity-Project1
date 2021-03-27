@@ -101,7 +101,7 @@ In order to use the playbook, you will need to have an Ansible control node alre
 
 SSH into the control node and follow the steps below:
 - Copy the filebeat-config.yml file to etc/ansible.
-- Update the hosts file to include: 
+- Update the hosts file to include 
    - [webservers] 10.0.0.5 ansible_python_interpreter=/usr/bin/python3 and 10.0.0.6 ansible_python_interpreter=/usr/bin/python3
    - [elk] 10.1.0.4 ansible_python_interpreter=/usr/bin/python3 
 - Run the playbook, and navigate to ____ to check that the installation worked as expected.
