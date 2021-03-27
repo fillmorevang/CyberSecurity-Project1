@@ -1,0 +1,44 @@
+USING VARIABLES
+1. 
+
+sysadmin@UbuntuDesktop:~/scripts$ nano sys_info.sh 
+
+# Variable
+output=$HOME/research/sys_info.txt
+
+# Quick system audit log
+echo 'System Information' >> $output
+date >> $output
+echo "$MACHTYPE" >> $output
+echo "IP Address: $(ip address | head -9 | tail -1)" >> $output
+echo "$HOSTNAME" >> $output
+
+# Log command for finding 777 files
+sudo find /home -type f -perm 777 >> $output
+
+# Log command for finding top 10 processes
+ps aux --sort -%mem | awk {'print $1, $2, $3, $4, $11'} | head -11 >> $output
+
+
+
+
+
+
+USING IF STATEMENTS
+1.
+
+# Check if ~/research directory does not exist then, create it
+if [ ! -d ~/research ]
+then
+   mkdir ~/research
+fi
+
+
+
+2.
+
+# If ~/research/sys_info.txt exist, then remove it
+if [ -f $output ]
+then
+   rm $output
+fi
