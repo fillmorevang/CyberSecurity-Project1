@@ -1,0 +1,26 @@
+1.
+
+sysadmin@UbuntuDesktop:~$ sudo nano .bashrc
+
+
+# Fillmore's aliases
+
+alias lsa='ls-a'
+alias docs='cd ~/Documents'
+alias dnlds='cd ~/Downloads'
+alias etc='cd /etc'
+
+sysadmin@UbuntuDesktop:~$ source .bashrc
+
+
+
+
+Bonus:
+
+sysadmin@UbuntuDesktop:~$ sudo nano .bashrc
+
+alias brc='nano ~/.bashrc'
+alias logs='mkdir ~/research && cp -r /var/logs/* /etc/passwd /etc/shadow /etc/hosts ~/research'
+
+sysadmin@UbuntuDesktop:~$ source .bashrc
+
