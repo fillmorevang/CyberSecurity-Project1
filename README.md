@@ -104,9 +104,7 @@ SSH into the control node and follow the steps below:
 - Update the hosts file to include the hosts that you would like to manage, eg: [ELK] 10.1.0.4 ansible_python_interpreter=/usr/bin/python3 
 - Run the playbook, and navigate to http://[ELK.VM.IP]:5601/app/kibana to check that the installation worked as expected.
 
-_TODO: Answer the following questions to fill in the blanks:_
-- _Which file is the playbook? Where do you copy it?_
-- _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
-- _Which URL do you navigate to in order to check that the ELK server is running?
+### Run the Playbook
 
-_As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
+![image](https://user-images.githubusercontent.com/75605065/112707088-9d395f00-8e76-11eb-8292-5677ccf0ac78.png)
+
