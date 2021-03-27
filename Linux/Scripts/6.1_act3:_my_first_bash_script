@@ -1,0 +1,47 @@
+1.
+
+sysadmin@UbuntuDesktop:~$ touch sys_info.sh
+
+sysadmin@UbuntuDesktop:~$ sudo chmod +x sys_info.sh 
+
+sysadmin@UbuntuDesktop:~$ nano sys_info.sh 
+
+#!/bin/bash
+
+
+echo "System Info"
+date
+echo "$(uname)"
+echo "IP Address: $(ip address | head -9 | tail -1)"
+echo "$(hostname)"
+
+sysadmin@UbuntuDesktop:~$ ./sys_info.sh 
+System Info
+Thu Jan 28 02:54:03 EST 2021
+Linux
+IP Address:     inet 10.0.2.15/24 brd 10.0.2.255 scope global dynamic noprefixroute enp0s3
+UbuntuDesktop
+
+
+or
+
+
+sysadmin@UbuntuDesktop:~$ nano sys_info.sh
+
+#!/bin/bash
+
+
+echo "System Info"
+date
+echo "$MACHTYPE"
+echo "IP Address: $(ip address | head -9 | tail -1)"
+echo "$HOSTNAME"
+
+sysadmin@UbuntuDesktop:~$ ./sys_info.sh 
+System Info
+Thu Jan 28 02:58:01 EST 2021
+x86_64-pc-linux-gnu
+IP Address:     inet 10.0.2.15/24 brd 10.0.2.255 scope global dynamic noprefixroute enp0s3
+UbuntuDesktop
+
+
