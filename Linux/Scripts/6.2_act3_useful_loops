@@ -1,0 +1,20 @@
+1.
+
+sysadmin@UbuntuDesktop:~/scripts$ nano sys_info.sh 
+
+# shadow and passwd for loops list
+files=(
+'/etc/shadow'
+'/etc/passwd'
+)
+
+
+
+
+2.
+
+# For loop that prints permissions of each file list
+for file in ${files[@]}
+do 
+ls -l $file >> $output
+done 
