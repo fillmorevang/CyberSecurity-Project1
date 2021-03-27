@@ -100,8 +100,8 @@ These Beats allow us to collect the following information from each machine:
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
 SSH into the control node and follow the steps below:
-- Copy the filebeat-config.yml file to etc/ansible.
-- Update the hosts file to include [elk] 10.1.0.4 ansible_python_interpreter=/usr/bin/python3 
+- Copy the ansible.cfg file to ~/etc/ansible.
+- Update the hosts file to include the hosts that you would like to manage eg: [ELK] 10.1.0.4 ansible_python_interpreter=/usr/bin/python3 
 - Run the playbook, and navigate to http://[ELK.VM.IP]:5601/app/kibana to check that the installation worked as expected.
 
 _TODO: Answer the following questions to fill in the blanks:_
