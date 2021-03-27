@@ -23,18 +23,6 @@
       name: docker
       state: present
 
-  - name: Install pip3
-    apt:
-      force_apt_get: yes
-      name: python3-pip
-      state: present
-
-
-  - name: Install Docker python module
-    pip:
-      name: docker
-      state: present
-
 
   - name: download and launch a docker elk container
     docker_container:
